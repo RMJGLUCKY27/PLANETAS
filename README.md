@@ -32,6 +32,5 @@ Este método se ejecuta en cada frame del juego . Su función principal es contr
 3.  `tierra.RotateAround(sol.position, Vector3.forward, velocidadOrbitalTierra * Time.deltaTime)`: Hace que la Tierra  orbite alrededor del Sol ☀️. `sol.position` indica el centro de la órbita (la posición del Sol ☀️).
 4.  `luna.RotateAround(tierra.position, Vector3.forward, velocidadOrbitalLuna * Time.deltaTime)`: Hace que la Luna  orbite alrededor de la Tierra . `tierra.position` indica el centro de la órbita (la posición de la Tierra ).
 
-**En resumen:**
 
 Este script utiliza tags ️ para identificar los GameObjects que representan la Tierra  y la Luna , y luego utiliza sus componentes Transform ⚙️ para controlar sus movimientos. El método `Start()` se encarga de inicializar las variables y encontrar los objetos, mientras que el método `Update()` se encarga de actualizar sus movimientos en cada frame del juego .
